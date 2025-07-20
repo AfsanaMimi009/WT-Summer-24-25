@@ -63,7 +63,7 @@
      <tr>
          <td></td>
             <td>
-             <input type="submit" name="" value="submit"  />
+             <input type="submit" name="" value="register"  />
                               
              </td>
          </tr>
