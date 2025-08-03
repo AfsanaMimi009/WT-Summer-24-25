@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Donor Information Form</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="donorForm">
+ 
+      <legend>Donor Information</legend>
+      <tr>
+        
+    <td><label>First Name <input type="text" name="firstName" ></label> </td>
+      </tr>
+      <tr>
+      <label>Last Name <input type="text" name="lastName"></label>
+      </tr>
+      <tr>
+          <label>Address <input type="text" name="address"></label>
+      </tr>
+   
+      <tr>
+           <label>City <input type="text" name="city"></label>
+      </tr>
+    
+      <label>State
+        <select name="state" >
+          <option value="">Select a State</option>
+          <option value="Dhaka">Dhaka</option>
+          <option value="Chattogram">Chattogram</option>
+          <option value="Cumillaa">Cumilla</option>
+        </select>
+      </label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label>Email <input type="email" name="email" ></label>
+      <label>Create Password (min 8 characters) <input type="password" name="password" id="password" minlength="8" ></label>
+      <label>Confirm Password <input type="password" name="confirmPassword" id="confirmPassword" required></label>
+
+      <div class="donation-section">
+        <p>Donation Amount</p>
+        <label><input type="radio" name="donation" value="None"> None</label>
+        <label><input type="radio" name="donation" value="500"> 500 BDT</label>
+        <label><input type="radio" name="donation" value="1000"> 1000 BDT</label>
+        <label><input type="radio" name="donation" value="1500"> 1500 BDT</label>
+        <label><input type="radio" name="donation" value="2000"> 2000 BDT</label>
+        <label><input type="radio" name="donation" value="Other"> Other</label>
+        <input type="number" name="otherAmount" placeholder="Other Amount">
+        <label><input type="checkbox" name="regularGiving"> I am interested in giving on a regular basis.</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label><input type="checkbox" name="anonymous"> I would like my gift to remain anonymous.</label>
+      <label><input type="checkbox" name="employerMatch"> My employer offers a matching gift program.</label>
+      <label><input type="checkbox" name="noThanks"> Please don't send a thank you letter.</label>
+      <label>Comments <textarea name="comments" rows="4"></textarea></label>
+    </fieldset>
+
+    <div class="buttons">
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+ <script src="valid.js"></script>
+
+</body>
+</html>
